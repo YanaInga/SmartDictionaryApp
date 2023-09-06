@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/searchWordsFragment"
+        android:icon="@drawable/search_icon"
+        android:title="@string/search_word"/>
+    <item
+        android:id="@+id/setFragment"
+        android:icon="@drawable/list_icon"
+        android:title="@string/dictionaries"/>
+    <item
+        android:id="@+id/exercisesFragment"
+        android:icon="@drawable/exercise_icon"
+        android:title="@string/exercises"/>
+</menu>

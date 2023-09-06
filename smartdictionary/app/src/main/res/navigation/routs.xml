@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/routs"
+    app:startDestination="@id/searchWordsFragment">
+
+    <fragment
+        android:id="@+id/addWordsFromTextFragment"
+        android:name="com.dev.smartdictionary.AddWordsFromTextFragment"
+        android:label=""
+        tools:layout="@layout/fragment_add_words_from_text" >
+        <action
+            android:id="@+id/action_addWordsFromTextFragment_to_listOfSetsFragment"
+            app:destination="@id/listOfSetsFragment" />
+        <argument
+            android:name="set_number"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/exercisesFragment"
+        android:name="com.dev.smartdictionary.ExercisesFragment"
+        android:label=""
+        tools:layout="@layout/fragment_exercises" >
+        <action
+            android:id="@+id/action_exercisesFragment_to_findTranslationExerciseFragment"
+            app:destination="@id/findTranslationExerciseFragment" />
+        <action
+            android:id="@+id/action_exercisesFragment_to_writeWordExerciseFragment"
+            app:destination="@id/writeWordExerciseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchWordsFragment"
+        android:name="com.dev.smartdictionary.SearchWordsFragment"
+        android:label=""
+        tools:layout="@layout/fragment_search_words" >
+        <action
+            android:id="@+id/action_searchWordsFragment_to_addWordsFromTextFragment"
+            app:destination="@id/addWordsFromTextFragment" />
+        <action
+            android:id="@+id/action_searchWordsFragment_to_setFragment"
+            app:destination="@id/setFragment" />
+        <action
+            android:id="@+id/action_searchWordsFragment_to_exercisesFragment"
+            app:destination="@id/exercisesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/setFragment"
+        android:name="com.dev.smartdictionary.SetFragment"
+        android:label="@string/dictionaries"
+        tools:layout="@layout/fragment_set" >
+        <action
+            android:id="@+id/action_setFragment_to_wordPageFragment"
+            app:destination="@id/wordPageFragment" />
+        <action
+            android:id="@+id/action_setFragment_to_createSetDialogFragment"
+            app:destination="@id/createSetDialogFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/wordPageFragment"
+        android:name="com.dev.smartdictionary.WordPageFragment"
+        android:label="Слово"
+        tools:layout="@layout/fragment_word_page" >
+        <argument
+            android:name="word_id"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="is_word_new"
+            app:argType="boolean" />
+    </fragment>
+    <fragment
+        android:id="@+id/listOfSetsFragment"
+        android:name="com.dev.smartdictionary.ListOfSetsFragment"
+        android:label="Список наборов слов"
+        tools:layout="@layout/fragment_list_of_sets" >
+        <action
+            android:id="@+id/action_listOfSetsFragment_to_createSetDialogFragment"
+            app:destination="@id/createSetDialogFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/findTranslationExerciseFragment"
+        android:name="com.dev.smartdictionary.FindTranslationExerciseFragment"
+        android:label=""
+        tools:layout="@layout/fragment_find_translation_exercise" />
+    <fragment
+        android:id="@+id/writeWordExerciseFragment"
+        android:name="com.dev.smartdictionary.WriteWordExerciseFragment"
+        android:label=""
+        tools:layout="@layout/fragment_write_word_exercise" />
+    <dialog
+        android:id="@+id/createSetDialogFragment"
+        android:name="com.dev.smartdictionary.CreateSetDialogFragment"
+        android:label="CreateSetDialogFragment" />
+</navigation>

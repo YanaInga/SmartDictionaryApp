@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Умный словарь</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search_word">Поиск слов</string>
+    <string name="dictionaries">Словари</string>
+    <string name="exercises">Упражнения</string>
+    <string name="enter_text_hint">Введите текст</string>
+    <string name="level_label">Уровень:</string>
+    <string name="count_label">Минимум повторов от:</string>
+    <string name="apply">Подтвердить</string>
+    <string name="add_word">add word from text</string>
+    <string name="repeats_text">Количество повторов:</string>
+    <string name="add_button_text">Добавить</string>
+    <string name="save_button">Сохранить</string>
+    <string name="original_hint">Пример употребления</string>
+    <string name="trexample_hint">Перевод примера</string>
+    <string name="word_hint">Слово</string>
+    <string name="tr_hint">Транскрипция</string>
+    <string name="translatedWord">Перевод</string>
+    <string name="isLearnStatus">Выучено</string>
+    <string name="text_view_add_set">Добавить новый</string>
+    <string name="title_dialog">Введите название набора</string>
+    <string name="SetDialogTitle">Добавить новый набор</string>
+    <string name="choose_bottom">Выбрать</string>
+    <string name="delete_set">Удаление набора</string>
+    <string name="dialog_about_message">Вы действительно хотите удалить набор и все слова из него?</string>
+    <string name="open_text_button">Открыть файл</string>
+    <string name="clear_text_button">Очистить</string>
+    <string name="words_type_label">Слова:</string>
+    <string name="settings_label">Настройки тренировки</string>
+    <string name="sets_label">Словари:</string>
+    <string name="count_words_label">Максимальное количество слов в тренировке:</string>
+    <string name="Enter_word">Введите слово</string>
+    <string-array name="exercises_types">
+        <item>Поиск перевода</item>
+        <item>Поиск слова</item>
+        <item>Написание слова по переводу</item>
+    </string-array>
+    <string-array name="words_types">
+        <item>Невыученные слова</item>
+        <item>Выученные слова</item>
+        <item>Все слова</item>
+    </string-array>
+    <string-array name="count_types">
+        <item>Все</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+        <item>60</item>
+        <item>80</item>
+        <item>100</item>
+        <item>150</item>
+    </string-array>
+</resources>
